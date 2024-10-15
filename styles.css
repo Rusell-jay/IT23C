@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 .container {
@@ -88,8 +89,8 @@ nav {
 }
 
 .highlight {
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
 }
@@ -105,4 +106,13 @@ nav {
 .about p, .about ul {
     margin: 10px auto; /* Centers paragraphs and lists */
 }
+.footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(189, 232, 243);
+    color: rgb(15, 20, 18);
+    text-align: center;
+  }
 
