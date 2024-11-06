@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -14,11 +13,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            min-height: 100vh;
+            background-image: url('https://images.alphacoders.com/737/737890.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
         }
 
         /* Navigation Bar Styles */
         nav {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 15px;
             display: flex;
@@ -49,37 +55,31 @@
         /* Hero Section */
         .hero {
             text-align: center;
-            padding: 100px 20px;
-            background-color: #f8f9fa;
+            padding: 80px 20px;
         }
 
         .hero h1 {
-            font-size: 48px;
-            color: #333;
+            font-size: 56px;
+            margin-bottom: 10px;
         }
 
         .hero p {
-            font-size: 20px;
-            color: #555;
+            font-size: 22px;
         }
 
-        /* Video Grid Section */
-        .video-section {
+        /* Video Grid */
+        .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid layout with responsive columns */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             padding: 20px;
-            margin-top: 30px;
         }
 
         .video-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #fff;
             padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .video-container h1 {
@@ -97,14 +97,11 @@
 
         /* Footer */
         .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: #f1f1f1;
-            color: #333;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 3px 10px;
+            margin-top: 30px;
         }
 
         /* Responsive Design */
@@ -114,11 +111,11 @@
             }
 
             .hero h1 {
-                font-size: 36px;
+                font-size: 40px;
             }
 
             .hero p {
-                font-size: 16px;
+                font-size: 18px;
             }
         }
     </style>
@@ -140,8 +137,8 @@
         <p>Watch some of the most iconic battles from the One Piece universe!</p>
     </header>
 
-    <!-- Video Section with arranged Videos -->
-    <section class="video-section">
+    <!-- Video Grid without Sections -->
+    <div class="video-grid">
         <!-- Video 1 -->
         <div class="video-container">
             <h1>Roger vs. Whitebeard</h1>
@@ -163,33 +160,31 @@
         <!-- Video 4 -->
         <div class="video-container">
             <h1>Rayleigh vs Blackbeard</h1>
-            <iframe src="https://www.youtube.com/embed/FLhzSdCWJA0" title="Garp Saves Koby" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/FLhzSdCWJA0" title="Rayleigh vs Blackbeard" allowfullscreen></iframe>
         </div>
 
-           <!-- Video 5 -->
-           <div class="video-container">
-            <h1>Koby’s Honesty Impact </h1>
-            <iframe src="https://www.youtube.com/embed/vpNKZA7KCco" title="Garp Saves Koby" allowfullscreen></iframe>
+        <!-- Video 5 -->
+        <div class="video-container">
+            <h1>Koby’s Honesty Impact</h1>
+            <iframe src="https://www.youtube.com/embed/vpNKZA7KCco" title="Koby’s Honesty Impact" allowfullscreen></iframe>
         </div>
 
         <!-- Video 6 -->
-           <div class="video-container">
-            <h1>Garp and Aokiji Hit the Omega Dap  </h1>
-            <iframe src="https://www.youtube.com/embed/Yp1yHJTSXDA" title="Garp Saves Koby" allowfullscreen></iframe>
+        <div class="video-container">
+            <h1>Garp and Aokiji Hit the Omega Dap</h1>
+            <iframe src="https://www.youtube.com/embed/Yp1yHJTSXDA" title="Garp and Aokiji Hit the Omega Dap" allowfullscreen></iframe>
         </div>
 
         <!-- Video 7 -->
         <div class="video-container">
-            <h1>Luffy final attack vs kaido   </h1>
-            <iframe src="https://www.youtube.com/embed/JjXDkDrhdPc" title="Garp Saves Koby" allowfullscreen></iframe>
+            <h1>Luffy final attack vs Kaido</h1>
+            <iframe src="https://www.youtube.com/embed/JjXDkDrhdPc" title="Luffy final attack vs Kaido" allowfullscreen></iframe>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer">
-            © Copyright <strong><span>Sample CV</span></strong>. All Rights Reserved
-        </div>
+    <footer class="footer">
+        © Copyright <strong><span>Sample CV</span></strong>. All Rights Reserved
     </footer>
 </body>
 </html>
